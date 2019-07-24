@@ -1,0 +1,42 @@
+{
+  "name": "reacto",
+  "version": "1.0.0",
+  "private": true,
+  "description": "I learn how to code with React",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "bootstrap": "^4.3.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf public && npm install",
+    "build": "webpack --mode production --colors --progress",
+    "prestart": "rimraf public && npm install",
+    "start": "webpack-dev-server --mode development --hot --colors --progress"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "author": "Serhii",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
