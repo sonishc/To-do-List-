@@ -52,7 +52,6 @@ body {
     margin-bottom: 20px;
   }
   .form-check {
-    background: #fff;
     width: 380px;
     padding: 20px 220px;
     border: 2px solid black;
@@ -65,7 +64,7 @@ body {
     height: 70vh;
     overflow-x: hidden;
     overflow-y: hidden;
-    // overflow-y: scroll;
+    overflow-y: scroll;
     .todo-item {
       width: 380px;
       font-family: 'Merriweather', serif;

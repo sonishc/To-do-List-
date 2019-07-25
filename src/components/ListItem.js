@@ -1,13 +1,13 @@
 import React from 'react';
 
-class ListItem extends React.Component {
+export default class ListItem extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
       status: "todo"
     }
-    
+
     this.handleDragTask = this.handleDragTask.bind(this);
   }
 
@@ -16,7 +16,8 @@ class ListItem extends React.Component {
     let task = e.target;
 
     task.style.cssText = "position: absolute; width: 380px; padding: 20px 0; \
-    text-align: center; background: #333; color: #fff; border: 0.5px solid rgb(109, 111, 117);"; 
+                          text-align: center; background: #333; color: #fff; \
+                          border: 0.5px solid rgb(109, 111, 117);";
 
     document.body.appendChild(task);
     moveAt(e);
@@ -41,11 +42,10 @@ class ListItem extends React.Component {
   }
 
   render() {
-    return <div onMouseDown={this.handleDragTask} className="todo-item">{this.props.placeholder}</div>
+    return (
+      <div id={this.props.id} onMouseDown={this.handleDragTask} className="todo-item">
+        {this.props.placeholder}
+      </div>
+    )
   }
 }
-
-export default ListItem;
-
-
-
