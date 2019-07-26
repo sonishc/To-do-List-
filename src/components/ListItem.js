@@ -16,8 +16,8 @@ export default class ListItem extends React.Component {
     let task = e.target;
 
     task.style.cssText = "position: absolute; width: 380px; padding: 20px 0; \
-                          text-align: center; background: #333; color: #fff; \
-                          border: 0.5px solid rgb(109, 111, 117);";
+                          text-align: center; background: antiquewhite; color: #333; \
+                          border: 4.5px solid #000;";
 
     document.body.appendChild(task);
     moveAt(e);

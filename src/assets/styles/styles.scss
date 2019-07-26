@@ -53,28 +53,33 @@ body {
   }
   .form-check {
     width: 380px;
-    padding: 20px 220px;
-    border: 2px solid black;
+    padding: 20px 235px;
+    border: 4.5px solid #000;
     border-top: 0;
     border-bottom: 0;
+    border-radius: 20px 20px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
     height: 70vh;
     overflow-x: hidden;
-    overflow-y: hidden;
     overflow-y: scroll;
+    &::-webkit-scrollbar { 
+      width: 0 !important
+    }
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
     .todo-item {
       width: 380px;
       font-family: 'Merriweather', serif;
       cursor: pointer;
       padding: 20px;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       text-align: center;
-      background: #333;
-      color: #fff;
-      border: 0.5px solid rgb(109, 111, 117);
+      background: azure;
+      color: #333;
+      border: 4.5px solid #000;
     }
   }
 }
